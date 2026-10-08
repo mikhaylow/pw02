@@ -6,7 +6,10 @@ int main()
     int packet_id, status_code;
     float voltage;
 
-    scanf("%x %o %f", &packet_id, &status_code, &voltage);
+    if (scanf("%x %o %f", &packet_id, &status_code, &voltage) != 3)
+    {
+        return -1;
+    }
 
     uint8_t ustatus_code = status_code;
 

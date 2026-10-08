@@ -5,7 +5,10 @@ int main()
 {
     int a, b;
 
-    scanf("%d %d", &a, &b);
+    if (scanf("%d %d", &a, &b) != 2)
+    {
+        return -1;
+    }
 
     bool a_bool = a;
     bool b_bool = b;

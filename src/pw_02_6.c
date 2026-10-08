@@ -6,7 +6,10 @@ int main(void)
     uint8_t a;
     unsigned int num;
 
-    scanf("%u", &num);
+    if (scanf("%u", &num) != 1)
+    {
+        return -1;
+    }
 
     a = (uint8_t)num;
 

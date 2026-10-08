@@ -4,7 +4,10 @@ int main()
 {
     long double a;
 
-    scanf("%Lf", &a);
+    if (scanf("%Lf", &a) != 1)
+    {
+        return -1;
+    }
 
     double b = a;
 
